@@ -24,7 +24,7 @@ class _ListViewDemoState extends State<ListViewDemo> {
                 selectedIndex = i;
                 setState(() {});
               },
-              leading: Icon(Icons.notifications),
+              leading: Text(i.toString()),
               title: Text("Index $i Selected Index $selectedIndex"),
               subtitle: Text("Notification Subtitle"),
               trailing: Icon(Icons.arrow_forward_ios),
