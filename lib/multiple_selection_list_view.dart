@@ -23,6 +23,12 @@ class _MultipleSelectionListViewDemoState
           itemBuilder: (context, i) {
             return ListTile(
               onTap: () {
+                if (selectedIndex.length > 5) {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                      content:
+                          Text("You cannot select more than 5 categories")));
+                  return;
+                }
                 if (selectedIndex.contains(i)) {
                   selectedIndex.remove(i);
                 } else {
