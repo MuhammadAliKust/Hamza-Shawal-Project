@@ -1,6 +1,7 @@
 import 'package:demo_project/list_view.dart';
 import 'package:demo_project/login_view.dart';
 import 'package:demo_project/multiple_selection_list_view.dart';
+import 'package:demo_project/page_view.dart';
 import 'package:demo_project/search_view.dart';
 import 'package:demo_project/test.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DynamicListView(),
+      home: PageViewDemo(),
     );
   }
 }
