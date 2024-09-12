@@ -1,9 +1,13 @@
+import 'package:demo_project/bottom_sheet_demo.dart';
 import 'package:demo_project/calculator_view.dart';
+import 'package:demo_project/dialog_box_view.dart';
+import 'package:demo_project/icon_tap.dart';
 import 'package:demo_project/list_view.dart';
 import 'package:demo_project/login_view.dart';
 import 'package:demo_project/multiple_selection_list_view.dart';
 import 'package:demo_project/page_view.dart';
 import 'package:demo_project/search_view.dart';
+import 'package:demo_project/slide_able_view.dart';
 import 'package:demo_project/switch_demo.dart';
 import 'package:demo_project/tab_bar_view.dart';
 import 'package:demo_project/test.dart';
@@ -22,7 +26,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: SwitchViewDemo(),
+      home: SlideAbleView(),
     );
   }
 }
